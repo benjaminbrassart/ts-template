@@ -6,8 +6,9 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "outDir": "build",
+    "sourceMap": true,
     "rootDir": "src",
+    "outDir": "build",
     "baseUrl": ".",
     "paths": {
       "src/*": ["src/*"]
