@@ -1,0 +1,8 @@
+# This Dockerfile expects the project root to be mounted
+# at /app. It also expects /app/node_modules to be a volume.
+
+FROM node:alpine
+
+WORKDIR /app
+
+ENTRYPOINT yarn start:debug
