@@ -2,12 +2,12 @@ FROM node:alpine
 
 WORKDIR /app
 
-COPY package.json yarn.lock ./
+COPY package.json package-lock.json ./
 
-RUN yarn install --frozen-lockfile --non-interactive
+RUN npm run install --frozen-lockfile --non-interactive
 
 COPY . .
 
-RUN yarn build
+RUN npm run build
 
-ENTRYPOINT yarn start
+ENTRYPOINT npm run start

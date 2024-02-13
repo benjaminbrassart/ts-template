@@ -5,4 +5,4 @@ FROM node:alpine
 
 WORKDIR /app
 
-ENTRYPOINT yarn start:debug
+ENTRYPOINT npm run start:debug
