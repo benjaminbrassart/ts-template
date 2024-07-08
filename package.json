@@ -10,7 +10,7 @@
     "clean": "rimraf build"
   },
   "dependencies": {
-    "rimraf": "^5.0.1"
+    "rimraf": "^6.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.5",
